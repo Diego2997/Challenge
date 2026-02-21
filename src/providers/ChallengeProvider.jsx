@@ -52,7 +52,7 @@ const ApplyToJob = async (uuid,jobId, applicationId, repoUrl,candidateId) => {
         jobId,
         applicationId,
         repoUrl,
-        // candidateId
+        candidateId
       }
     );
 
@@ -66,7 +66,6 @@ const ApplyToJob = async (uuid,jobId, applicationId, repoUrl,candidateId) => {
     if (backendError?.details?.fieldErrors) {
       const fieldErrors = backendError.details.fieldErrors;
 
-      // Tomamos el primer error disponible
       const firstErrorKey = Object.keys(fieldErrors)[0];
       const firstErrorMessage = fieldErrors[firstErrorKey][0];
 
