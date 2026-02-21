@@ -1,0 +1,6 @@
+export const actionTypes = {
+  SET_LOADING: "SET_LOADING",
+  SET_ERROR: "SET_ERROR",
+  SET_CANDIDATE: "SET_CANDIDATE",
+  SET_JOBS: "SET_JOBS",
+};
